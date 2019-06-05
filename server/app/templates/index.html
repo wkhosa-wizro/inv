@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My website</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/index.js') }}"></script>
+
+</head>
+<body>
+    <div id="container">
+        <div id="border-strip" >
+
+        </div>
+        <div id="header">
+            <div id="name">
+                <h1>Invoice</h1>
+            </div>
+            <div id="logo">
+                <img src="{{ url_for('static', filename='img/malcam_logo.png') }}">
+            </div>
+        </div>
+        <div id="document-info" >
+            <div id="from">
+              <script type="text/javascript" src="{{ url_for('static', filename='js/index.js') }}"></script>
+                <div id="from-variables">
+                    <p id="compReg-var" >Co. Reg. No.</p>
+                    <p id="vat-var">Vat Reg. No:</p>
+                    <p id="tel-var">Tel:</p>
+                    <p id="fax-var">Fax:</p>
+                    <p id="email-var">Email:</p>
+                </div>
+
+                <div id="from-values">
+                    <p id="compReg-val" >2012/107435/07</p>
+                    <p id="vat-val">9454/069/17/1 </p>
+                    <p id="tel-val">071 015 8651</p>
+                    <p id="fax-val">086 759 2795</p>
+                    <p id="email-val">sales@malcam.o.za</p>
+                </div>
+            </div>
+
+            <div id="address">
+              <script type="text/javascript" src="{{ url_for('static', filename='js/index.js') }}"></script>
+                <div id="addr-variables">
+                    <p id="street-var">3107 Ratama Cr</p>
+                    <p id="line1-addr-var">Brooklands Lifestyle Estates 3</p>
+                    <p id="line2-addr-var">Kosmosdal</p>
+                    <p id="code-var">157</p>
+                </div>
+                </div>
+
+            <div id="to">
+              <script type="text/javascript" src="{{ url_for('static', filename='js/index.js') }}"></script>
+                <div id="to-variables">
+                    <p id="to-client-var">{{customer_name}}</p>
+                    <p id="to-bille-var">{{bill_to}}</p>
+                    <p id="to-email-var">{{email}}</p>
+                    <p id="to-phone-var">{{tel}}</p>
+                    <p id="to-fax-var">{{fax}}</p>
+                    <p id="to-street-var">{{street}}</p>
+                    <p id="to-line1-addr-var">{{city}}</p>
+                    <p id="to-line2-addr-var">{{line2addr}}</p>
+                    <p id="to-code-var">{{zipcode}}</p>
+                </div>
+                </div>
+
+        </div>
+        <div id="mytable">
+                <table id="table">
+                    <tr id="col">
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                        <th>Amount</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            {{description1}}
+                        </td>
+                        <td>
+                            R {{price1}}
+                        </td>
+                        <td>
+                            {{qty1}}
+                        </td>
+                        <td>
+                            R {{amount1}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Domain Redistration
+                        </td>
+                            <td>
+                                R 114.00
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                R 114.00
+                            </td>
+                        </tr>
+
+                </table>
+        </div>
+        <div id="summary">
+            <div id="sub">
+              <script type="text/javascript" src="{{ url_for('static', filename='js/index.js') }}"></script>
+                <div id="sub-variables">
+                    <p id="sub-var"></p>
+                    <p id="tax-var"></p>
+                    <p id="total-var"></p>
+                    <p id="balance-var"></p>
+                </div>
+                <div id="sub-values">
+                    <p id="sub-val"></p>
+                    <p id="tax-val"></p>
+                    <p id="total-val"></p>
+                    <p id="balance-val"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div id="footer">
+            Copyright &copy;
+        </div>
+    </div>
+
+
+</body>
+</html>

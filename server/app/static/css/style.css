@@ -1,0 +1,201 @@
+body {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color-adjust: exact;
+    color: #444444;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+table {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    padding: 10px;
+    width: 100%;
+}
+
+td, th {
+    border: 0px;
+    text-align: left;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #cccccc;
+}
+
+#col {
+    background-color: #42c945;
+}
+
+#mytable {
+    margin: 20px;
+    background-color: #ffffff;
+}
+
+#addr {
+    background-color: #444444;
+    text-align: center;
+    float: center;
+    padding: 5px;
+    height: 190px;
+    width: 100px;
+}
+
+#addr-variables{
+
+    float: left;
+    padding-left: 20px;
+    height: 100;
+    width: 100;
+}
+
+#from {
+    text-align: left;
+    float: left;
+    padding-left: 20px;
+    height: 260px;
+    width: 260px;
+}
+
+#from-variables{
+
+    float: left;
+    padding-left: 10px;
+    height: 250;
+    width: 130;
+}
+
+#from-values{
+    float: right;
+    padding-right: 45px;
+    height: 250;
+    width: 130;
+}
+
+#summary{
+    float: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 30px;
+    height: 180;
+    width: 100;
+}
+
+#sub {
+    background-color: white;
+    text-align: left;
+    float: left;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 190px;
+    width: 250px;
+}
+
+#sub-variables{
+
+    float: left;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 180;
+    width: 100;
+}
+
+#sub-values{
+    float: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 30px;
+    height: 180;
+    width: 100;
+}
+
+#to {
+    background-color: white;
+    text-align: left;
+    float: right;
+    height: 260px;
+    width: 300px;
+}
+
+#to-variables{
+    float: left;
+    padding-left: 20px;
+    height: 180;
+    width: 300;
+}
+
+#border-strip {
+    background-color: rgb(85, 139, 47);
+    height: 16px ;
+}
+
+#top {
+    color: white;
+    background-color: #42c945;
+    margin: 2px;
+}
+
+#container {
+    background-color: #ffffff;
+    width: 800px;
+    height: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+}
+
+#header {
+    background-color: white;
+    color: whitesmoke;
+    height: 100px;
+}
+
+#name{
+    float: left;
+    color: grey;
+    padding: 20px;
+}
+
+#document-info {
+    background-color: rgb(240, 240, 240);
+    height: 260px;
+
+}
+
+#logo {
+    float: right;
+    padding-right: 20px;
+}
+
+#content {
+    padding: 10p;
+    height: 800px;
+}
+
+#nav {
+    width: 180px;
+    float: left;
+}
+
+#main {
+    width: 600px;
+    float: right;
+}
+
+#footer {
+    clear: both;
+    text-align: center;
+}
