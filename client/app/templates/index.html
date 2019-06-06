@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="style.css" >
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}" >
 
 </head>
 <body>
     <h1>INVOICE FORM</h1>
     <h2>Client Information</h2>
-    <form id="customer-info" action=" http://0.0.0.0:8001/hello" method="post">
+    <form id="customer-info" action=" http://35.204.57.81:9099/hello" method="post">
         <div>
           <label for="name">Name:</label>
           <input type="text" id="name" name="customer_name">

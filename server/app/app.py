@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def form():
-	return render_template('http://127.0.0.1:5500/index.html')
+	return render_template('http://35.204.57.81:9090/index.html')
 
 @app.route('/hello', methods=['GET', 'POST'])
 def hello():
@@ -25,4 +25,4 @@ def hello():
 		)
 
 if __name__ == "__main__":
-		app.run(host='127.0.0.1', port=8001)
+		app.run(host='0.0.0.0', port=9099)
