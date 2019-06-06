@@ -21,7 +21,11 @@ def hello():
 		description1=request.form['description'],
 		price1=request.form['price'],
 		qty1=request.form['qty'],
-		amount1=(int(request.form['qty']) * int(request.form['price']))
+		amount1=(int(request.form['qty']) * int(request.form['price'])),
+		sub_tot=(int(request.form['qty']) * int(request.form['price'])),
+		tax=float((int(request.form['qty']) * int(request.form['price'])) * 0.15),
+		total=((int(request.form['qty']) * int(request.form['price'])) + float((int(request.form['qty']) * int(request.form['price'])) * 0.15)),
+		balance=((int(request.form['qty']) * int(request.form['price'])) + float((int(request.form['qty']) * int(request.form['price'])) * 0.15))
 		)
 
 if __name__ == "__main__":
