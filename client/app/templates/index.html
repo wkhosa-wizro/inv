@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Invoice Generator</title>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script> 
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}" >
-
+	<script type="text/javascript" src="{{ url_for('static', filename='js/index.js') }}"></script>
 </head>
 <body>
     <h1>INVOICE FORM</h1>
@@ -52,6 +53,7 @@
         </div>
       <br>
     <h2>Payment Information</h2>
+    <div class="payment-details" id="payments">
     <div>
       <label for="description">Desription</label>
       <textarea id="description" name="description"></textarea>
@@ -64,7 +66,9 @@
       <label for="Qty">Qty</label>
       <input type="number" id="qty" name="qty">
     </div>
-
+    </div>
+    <br><br>
+<a href="#" title="" class="add-payment" >Add Item</a>
     <br>
     <div class="button">
         <script>
