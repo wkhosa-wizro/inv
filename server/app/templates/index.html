@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My website</title>
+    <title>Invoice</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
     <script type="text/javascript" src="{{ url_for('static', filename='js/index.js') }}"></script>
 
@@ -38,7 +38,7 @@
                     <p id="vat-val">9454/069/17/1 </p>
                     <p id="tel-val">071 015 8651</p>
                     <p id="fax-val">086 759 2795</p>
-                    <p id="email-val">sales@malcam.o.za</p>
+                    <p id="email-val">sales@malcam.co.za</p>
                 </div>
             </div>
 
@@ -78,33 +78,34 @@
                     </tr>
                     <tr>
                         <td>
-                            {{description1}}
+                            {{description}}
                         </td>
                         <td>
-                            R {{price1}}
+                            R {{price}}
                         </td>
                         <td>
-                            {{qty1}}
+                            {{qty}}
                         </td>
                         <td>
-                            R {{amount1}}
+                            R {{amount}}
                         </td>
                     </tr>
-<!--                    <tr>
+		    {% for n in amtdict  %}
+                    <tr>
                         <td>
-                            Domain Redistration
+                        	{{ amtdict[n][1] }}
                         </td>
                             <td>
-                                R 114.00
+			   	R {{ amtdict[n][2] }}
                             </td>
                             <td>
-                                1
+                                 {{ amtdict[n][3] }}
                             </td>
                             <td>
-                                R 114.00
+			    	R {{ amtdict[n][0] }}
                             </td>
                         </tr>
--->
+			{% endfor %}
                 </table>
         </div>
         <div id="summary">
