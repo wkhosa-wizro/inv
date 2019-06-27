@@ -12,9 +12,9 @@ var ZipCode = "157";
 
 window.onload = function() {
 
-    document.getElementById("sub-var").innerHTML =  "Subtotal      R ";
-    document.getElementById("tax-var").innerHTML =  "Tax (15%)       ";
-    document.getElementById("total-var").innerHTML =  "Total         ";
-    document.getElementById("balance-var").innerHTML =  "Balance Due ";
+    document.getElementById("sub-var").innerHTML =  "Subtotal ";
+    document.getElementById("tax-var").innerHTML =  "Tax (15%)";
+    document.getElementById("total-var").innerHTML =  "Total";
+    document.getElementById("balance-var").innerHTML =  "<b>Balance Due";
 
 }

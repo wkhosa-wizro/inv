@@ -29,15 +29,15 @@
                     <p id="compReg-var" >Co. Reg. No.</p>
                     <p id="vat-var">Vat Reg. No:</p>
                     <p id="tel-var">Tel:</p>
-                    <p id="fax-var">Fax:</p>
+                    <p id="fax-var">Cell:</p>
                     <p id="email-var">Email:</p>
                 </div>
 
                 <div id="from-values">
-                    <p id="compReg-val" >2012/107435/07</p>
-                    <p id="vat-val">9454/069/17/1 </p>
-                    <p id="tel-val">071 015 8651</p>
-                    <p id="fax-val">086 759 2795</p>
+                    <p id="compReg-val" >2018/272360/07</p>
+                    <p id="vat-val">4460285739 </p>
+                    <p id="tel-val">087 701 5927</p>
+                    <p id="fax-val">073 618 2779</p>
                     <p id="email-val">sales@malcam.co.za</p>
                 </div>
             </div>
@@ -48,7 +48,7 @@
                     <p id="street-var">3107 Ratama Cr</p>
                     <p id="line1-addr-var">Brooklands Lifestyle Estates 3</p>
                     <p id="line2-addr-var">Kosmosdal</p>
-                    <p id="code-var">157</p>
+                    <p id="code-var">0157</p>
                 </div>
                 </div>
 
@@ -61,9 +61,10 @@
                     <p id="to-phone-var">{{tel}}</p>
                     <p id="to-fax-var">{{fax}}</p>
                     <p id="to-street-var">{{street}}</p>
-                    <p id="to-line1-addr-var">{{city}}</p>
+                    <p id="to-line1-addr-var">{{line1addr}}</p>
                     <p id="to-line2-addr-var">{{line2addr}}</p>
                     <p id="to-code-var">{{zipcode}}</p>
+		    <p id="to-invoice">Invoice No: malc{{invoiceno}}</p>
                 </div>
                 </div>
 
@@ -118,16 +119,20 @@
                     <p id="balance-var"></p>
                 </div>
                 <div id="sub-values">
-                    <p id="sub-val">{{sub_tot}}</p>
-                    <p id="tax-val">{{tax}}</p>
-                    <p id="total-val">{{total}}</p>
-                    <p id="balance-val">{{balance}}</p>
+                    <p id="sub-val">R {{sub_tot}}</p>
+                    <p id="tax-val">R {{tax}}</p>
+                    <p id="total-val">R {{total}}</p>
+                    <p id="balance-val"><b>R {{balance}}</p>
                 </div>
             </div>
-        </div>
     </div>
-        <div id="footer">
-            Copyright &copy;
+	    <div class="banking-details">
+	    	<p>Malcam Solution PTY LTD<p/>
+		<p>FNB<p/>
+		<p>Branch: Centurion<p/>
+		<p>Account Type: Current Account<p/>
+		<p>Account Number: 62765356805<p/>
+	    </div>
         </div>
     </div>
 

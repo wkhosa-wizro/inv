@@ -89,7 +89,7 @@ tr:nth-child(even) {
     padding-bottom: 5px;
     padding-right: 30px;
     height: 180;
-    width: 100;
+    width: 400;
 }
 
 #sub {
@@ -100,12 +100,13 @@ tr:nth-child(even) {
     padding-top: 5px;
     padding-bottom: 5px;
     height: 190px;
-    width: 250px;
+    width: 300px;
 }
 
 #sub-variables{
 
     float: left;
+    padding-right: 5px;
     padding-left: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -122,6 +123,18 @@ tr:nth-child(even) {
     width: 100;
 }
 
+.banking-details {
+	float: left;
+	padding-top: 10px;
+	padding-left: 40px;
+	height: 180px;
+	width: 300px;
+}
+
+.banking-details p {
+	padding-top: 0px;
+	
+}
 #to {
     background-color: white;
     text-align: left;
@@ -199,3 +212,4 @@ tr:nth-child(even) {
     clear: both;
     text-align: center;
 }
+

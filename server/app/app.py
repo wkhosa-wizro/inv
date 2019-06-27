@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+from var import INV
 
 app = Flask(__name__)
 
@@ -6,14 +7,14 @@ app = Flask(__name__)
 def form():
 	return render_template('http://35.204.57.81:9090/index.html')
 
-@app.route('/hello', methods=['GET', 'POST'])
-def hello():
+@app.route('/invoice_pdf', methods=['GET', 'POST'])
+def invoice_pdf():
 
 	customer_name = request.form['customer_name'] 
 	bill_to = request.form['bill_to']
 	email = request.form['email']
 	tel = request.form['tel']
-	city = request.form['city']
+	line1addr = request.form['line1addr']
 	street_name = request.form['street_name']
 	line2addr = request.form['line2addr']
 	zipcode = request.form['zipcode']
@@ -44,12 +45,13 @@ def hello():
 	tax = sub_tot * 0.15
 	total = sub_tot + tax
 	balance = total
+	invoiceno = 1000
 	print("\n------")
 	return render_template('index.html', customer_name=customer_name,
-	 bill_to=bill_to, email=email, tel=tel, city=city, street_name=street_name, 
+	 bill_to=bill_to, email=email, tel=tel, line1addr=line1addr, street_name=street_name, 
 	 line2addr=line2addr, zipcode=zipcode, fax=fax, description=description, 
 	 price=price, qty=qty, amount=amount, sub_tot=sub_tot, tax=tax,
-	 total=total, balance=balance,amtdict=amtdict)
+	 total=total, balance=balance,amtdict=amtdict, invoiceno=invoiceno)
 
 if __name__ == "__main__":
 		app.run(host='0.0.0.0', port=9099)
